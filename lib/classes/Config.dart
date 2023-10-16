@@ -23,7 +23,7 @@ class Config {
   static Color            main_background_color     = const Color(0xFF1A1A1A);
   static Color            main_font_color           = Colors.white;
   static const double     main_font_size            = 16;
-  static Color            button_background_color   = Color(0xFF355C7D);
+  static Color            button_background_color   = const Color(0xFF355C7D);
   static Color            accent1_color             = Colors.grey;
   static Color            accent2_color             = const Color(0xFF333333);
   static Color            hilite1_color             = Colors.cyan.shade400;

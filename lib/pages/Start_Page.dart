@@ -5,8 +5,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter_animate/flutter_animate.dart';
-import '../classes/Config.dart';
 import '../classes/Utils.dart';
 import '../providers/Controller.dart';
 
@@ -81,13 +79,13 @@ class _Start_PageState extends State<Start_Page> {
   }
 
   Expanded _question( int num ) {
-    double bottom_padding = 7;
+    double bottomPadding = 7;
     if ( num < 3 ) {
-      bottom_padding = 5;
+      bottomPadding = 5;
     }
-    double font_size = 20.0;
+    double fontSize = 20.0;
     if( num == 2 ) {
-      font_size = 16.0;
+      fontSize = 16.0;
     }
 
     return Expanded(
@@ -95,7 +93,7 @@ class _Start_PageState extends State<Start_Page> {
       child: Visibility(
         visible: viz[num],
         child: Padding(
-          padding: EdgeInsets.fromLTRB(12,10,12,bottom_padding),
+          padding: EdgeInsets.fromLTRB(12,10,12,bottomPadding),
           child: Container(
             color: Color(0xFF6C5B7B),
             width: double.infinity,
@@ -120,7 +118,7 @@ class _Start_PageState extends State<Start_Page> {
                 alignment: Alignment.center,
                 child: Text(
                   question[num],
-                  style: TextStyle(fontSize: font_size),
+                  style: TextStyle(fontSize: fontSize),
                   textAlign: TextAlign.center
                 ),
               ),
