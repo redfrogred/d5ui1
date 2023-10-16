@@ -48,7 +48,6 @@ app.*.map.json
 # MY ADDITIONS
 .metadata
 analysis_options.yaml
-/ios
 /web
 /test
 pubspec.lock
